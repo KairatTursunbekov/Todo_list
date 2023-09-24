@@ -1,0 +1,164 @@
+body{
+    margin: 60px auto;
+    background-image: url(https://ryansechrest.com/content/images/2022/08/nodes.gif); 
+    font-family:
+    Lucida Console,
+    Courier,
+    monospace;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 55px;
+    color: #FFFAFA;
+}
+.listBlock{
+    width: 800px;
+    background-color: rgb(240, 236, 236);
+    padding: 2em 3em;
+    opacity: 0.8;
+}
+.listBlock div{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+.textIn{
+    height: 2em;
+    text-align: center;
+}
+.btn{
+    width: 40px;
+    gap: 15px;
+}
+ul li{
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+.taskItem{
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+}
+.done{
+    text-decoration: line-through;
+}
+@media(max-width: 950px){
+    .listBlock{
+        width: 700px;
+    }
+}
+@media(max-width: 845px){
+    .listBlock{
+        width: 600px;
+    }
+}
+@media(max-width: 735px){
+    .listBlock{
+        width: 500px;
+        padding: 2em 2em;
+    }
+}
+@media(max-width: 600px){
+    .listBlock{
+        width: 430px;
+        padding: 2em 1em; 
+    }
+    .taskItem{
+        grid-template-columns: 6fr 1fr 1fr;
+    }
+    .btn{
+        width: 35px;
+    }
+}
+@media(max-width: 500px){
+    .listBlock{
+        width: 340px;
+        padding: 1em ; 
+    }
+    .taskItem{
+        grid-template-columns: 6fr 1fr 1fr;
+    }
+    .btn{
+        width: 35px;
+    }
+}
+@media(max-width: 400px){
+    .listBlock{
+        width: 320px;
+        /* padding: 1em ;  */
+    }
+    .taskItem{
+        grid-template-columns: 6fr 1fr 1fr;
+    }
+    .btn{
+        width: 27px;
+    }
+}
+@media(max-width: 400px){
+    .listBlock{
+        width: 300px;
+    }
+    .taskItem{
+        grid-template-columns: 6fr 1fr 1fr;
+    }
+    .btn{
+        width: 27px;
+    }
+    .listBlock div{
+        grid-template-columns: 3fr 1.4fr 0.8fr;
+    }
+}
+@media(max-width: 360px){
+    .listBlock{
+        width: 250px;
+    }
+     .taskItem{
+        grid-template-columns: 8fr 1fr 1fr;
+        margin-left: -35px;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+@media(max-width: 310px){
+    .listBlock{
+        width: 200px;
+    }
+     .listBlock div{
+        grid-template-columns: 2fr 1.5fr 1fr;
+    } 
+    .textIn{
+        height: 1.7em;
+        text-align: center;
+        width: 90px;
+    }
+    h1{
+        font-size: 40px;
+    } 
+}
+@media(max-width: 300px){
+    .listBlock{
+        width: 170px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .listBlock div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .textIn{
+        width: 160px;
+    }
+}
+h3{
+    color: white;
+    margin-top: 300px;
+    margin-left: 600px;
+}
